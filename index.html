@@ -66,7 +66,7 @@
                 <img src="https://images.unsplash.com/photo-1606838976517-c026bea5b7e9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                 <h3>secend card</h3>
                 <p>this secend card is food card</p>
-                <button>read more</button>><br><br>
+                <button>read more</button><br>
                     <button onclick="minus()">-</button>
     <button id="count">0</button>
     <button onclick="plus()">+</button>
@@ -79,12 +79,15 @@
     </div>
 
     <script>
-        let count=0;
-    function minus(){
-        count--;
+        letcount=0;
+        function minus()
+        {
+            count--;
         document.getElementById("count").innerHTML="count";
     }
-    function puls(){
+    
+    function puls()
+    {
         count++;
         document.getElementById("count").innerHTML="count";
     }
