@@ -74,42 +74,62 @@
             </div>
             <div class="box">
                 <img src="https://rukminim2.flixcart.com/fk-p-flap/760/1020/image/a7362a65438de7ee.png?q=60" alt="" height="300px"width="300px"><br><br>
-                <button onclick="minus()">-</button>
+                <button onclick="mod()">-</button>
                 <button id="demo"> add cart</button>
-                <button onclick="plus()">+</button>
+                <button onclick="addi()">+</button>
                 
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1680956987803-c0942e7b65c5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" height="200px"width="300px">
+
+                <h1>walldesign</h1>
+
+                <form action="">
+                    <label for="">choose color</label>
+                    <select name="" id="color" onchange="showcolor()" >
+                        <option value="select color">select color</option>
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+                        <option value="blue">blue</option>
+                        <option value="black">black</option>
+                        <option value="white">white</option>
+                        <option value="lightblue">lightblue</option>
+                    </select>
+                </form>
+                <h2 id="result"></h2>
             </div>
         
     </div>
 
     <script>
-        letcount=0;
-        function minus()
-        {
-            count--;
-        document.getElementById("count").innerHTML="count";
-    }
-    
-    function puls()
-    {
-        count++;
-        document.getElementById("count").innerHTML="count";
-    }
+    let count = 0;
 
-        let count=0;
-        count--;
-          function minus()
-        {
-        document.getElementById("demo").innerHTML="count";
-    }
-    
-    
+function minus() {
+    count--;
+    document.getElementById("count").innerHTML = count;
+}
+
+function plus() {
     count++;
-    function puls()
-    {
-        document.getElementById("demo").innerHTML="count:"+count;
-    }
-    
+    document.getElementById("count").innerHTML = count;
+}
+
+function mod() {
+    document.getElementById("demo").innerHTML = count;
+}
+            document.getElementById("demo").innerHTML = count;
+
+
+function addi() {
+    document.getElementById("demo").innerHTML = count;
+}
+        
+        function showcolor()
+        {
+        let color =document.getElementById("color").innerHTML=velue;
+
+            document.getElementById("result").innerHTML="select color:"
+        }
     </script>
 </body>
 </html>
