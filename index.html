@@ -73,7 +73,11 @@
 
             </div>
             <div class="box">
-                <img src="https://rukminim2.flixcart.com/fk-p-flap/760/1020/image/a7362a65438de7ee.png?q=60" alt="" height="300px"width="300px">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/760/1020/image/a7362a65438de7ee.png?q=60" alt="" height="300px"width="300px"><br><br>
+                <button onclick="minus()">-</button>
+                <button id="demo"> add cart</button>
+                <button onclick="plus()">+</button>
+                
             </div>
         
     </div>
@@ -90,6 +94,20 @@
     {
         count++;
         document.getElementById("count").innerHTML="count";
+    }
+
+        let count=0;
+        count--;
+          function minus()
+        {
+        document.getElementById("demo").innerHTML="count";
+    }
+    
+    
+    count++;
+    function puls()
+    {
+        document.getElementById("demo").innerHTML="count:"+count;
     }
     
     </script>
